@@ -10,8 +10,12 @@ body {
 }
 
 /** Header */
-.header {
-    
+.menu-item a {
+    text-decoration: none;
+    color: black;
+}
+.menu-item a:hover {
+    color: gray;
 }
 
 .container {
@@ -35,6 +39,10 @@ ul.main-menu {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: .5rem;
 }
 
 @media ( min-width: 768px ) {
