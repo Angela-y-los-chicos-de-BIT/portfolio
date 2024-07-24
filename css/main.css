@@ -1,5 +1,5 @@
 * {
-    border: 1px dotted blue;
+    /* border: 1px dotted blue; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,6 +10,10 @@ body {
 }
 
 /** Header */
+.header {
+    
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -23,7 +27,7 @@ body {
     font-weight: 600;
 }
 
-nav.navbar {
+.navbar {
     display: none;
 }
 
@@ -32,3 +36,14 @@ ul.main-menu {
     padding: 0;
     margin: 0;
 }
+
+@media ( min-width: 768px ) {
+    .hamburger-icon {
+        display: none;
+    }
+    .navbar {
+        display: block;
+    }
+}
+
+
