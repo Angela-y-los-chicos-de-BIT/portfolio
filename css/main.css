@@ -24,7 +24,17 @@ body {
     font-family: "Epilogue", sans-serif;
 }
 
+p {
+    line-height: 1.4;
+    font-size: 17px;
+}
+
 /** Header */
+#logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .menu-item a {
     text-decoration: none;
     color: var( --color-menu-link );
@@ -43,11 +53,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 26px auto;
-}
-
-#logo {
-    font-size: 20px;
-    font-weight: 600;
 }
 
 .navbar {
@@ -78,4 +83,13 @@ ul.main-menu {
     background-color: var( --pink-lace);
 }
 
-
+@media ( min-width: 768px ) {
+    .bio-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 60%;
+        padding: 7rem 0;
+    }
+}
