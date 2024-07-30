@@ -90,6 +90,10 @@ ul.main-menu {
     font-size: 17px;
     margin: 1.2rem 0;
 }
+.name-designer {
+    display: block;
+    text-decoration: underline;
+}
 .profession {
     font-weight: normal;
 }
@@ -108,6 +112,9 @@ ul.main-menu {
     }
     .biography {
         margin-top: initial;
+    }
+    .description-content {
+        width: 70%;
     }
 }
 
@@ -139,8 +146,10 @@ ul.main-menu {
 } */
 
 /* Selecciona cada elemento hijo par excepto el último */
-.description-content *:nth-child(2n):not(:nth-last-child(1)) {
-    background-color: red; /* Cambia esto al color de fondo que prefieras */
+.description-content *:nth-child( 2n ):not( :nth-last-child( 1 ) ) {
+    background-color: var( --paolo-veronese-green );    /* Cambia esto al color de fondo que prefieras */
+    color: var( --piggy-pink );
+    font-weight: 600;
 }
 /** Fin: Forma 2 */
 
