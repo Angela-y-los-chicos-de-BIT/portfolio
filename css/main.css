@@ -8,10 +8,14 @@
     --piggy-pink: #F6DCE9;
     --pink-lace: #F9E6F0;
     --white: #ffffff;
+    /** Forms */
     --height-input: 69px;
 
-    /**/
+    /** Anchors */
     --color-menu-link: var( --charleston-green-v1 );
+
+    /** Fonts */
+    --overall-font-size: 62.5%;
 }
 
 * {
@@ -21,24 +25,30 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: var( --overall-font-size );      /* 1rem = 10px */
+}
+
 body {
     font-family: "Epilogue", sans-serif;
+    font-size: 1.6rem;      /* 16px */
 }
 
 p {
     line-height: 1.4;
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 /** Header */
 #logo {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .menu-item a {
     text-decoration: none;
     color: var( --color-menu-link );
+    font-size: 1.7rem;
 }
 .menu-item a:hover {
     color: gray;
@@ -86,6 +96,14 @@ ul.main-menu {
 .bio-content {
     padding: 4.8rem 0;
 }
+.biography {
+    margin-top: 6rem;
+    font-size: 1.7rem;
+}
+.biography strong {
+    font-size: 1.7rem;
+}
+
 .avatar-name {
     font-size: 17px;
     margin: 1.2rem 0;
@@ -97,9 +115,7 @@ ul.main-menu {
 .profession {
     font-weight: normal;
 }
-.biography {
-    margin-top: 6rem;
-}
+
 
 @media ( min-width: 768px ) {
     .bio-content {
@@ -121,6 +137,12 @@ ul.main-menu {
 /** Main: Section Story */
 .description-content {
     padding: 5rem 0;
+}
+.description-content h2 {
+    font-size: 2.4rem;
+}
+.description-content p {
+    font-size: 1.6rem;
 }
 .description-content *:first-child {
     margin-bottom: 2.5rem;
@@ -162,6 +184,20 @@ ul.main-menu {
     padding: 3rem 0;
 }
 
+
+input::-webkit-input-placeholder {
+    font-size: 1.7rem;
+}
+input:-moz-placeholder {
+    font-size: 1.7rem;
+}
+input::-moz-placeholder {
+    font-size: 1.7rem;
+}
+input::-ms-input-placeholder {
+    font-size: 1.7rem;
+}
+
 @media ( min-width: 768px ) {
     .footer-content {
         flex-direction: row;
@@ -174,6 +210,7 @@ ul.main-menu {
 }
 .lets-work h2 {
     margin-bottom: 2.4rem;
+    font-size: 3.2rem;
 }
 ul.social-media {
     list-style: none;
@@ -203,6 +240,7 @@ ul.social-media {
     padding: 25px 85px;
     border: 1px solid transparent;
     margin: 1.6rem 0;
+    font-size: 2rem;
 }
 .btn--bg-black {
     background-color: var( --black );
