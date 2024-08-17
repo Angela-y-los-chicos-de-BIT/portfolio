@@ -13,8 +13,20 @@
 <body>
     <header class="header">
         <div class="container logo-navbar">
-            <div id="logo" class="logo">Logo</div>
+            
             <nav class="navbar">
+
+                <div id="logo" class="logo">
+                    <a href="#">Logo</a>
+                </div>
+
+                <input type="checkbox" id="toggle-main-menu">
+                <label for="toggle-main-menu" class="main-menu__open">Open</label>
+                <label for="toggle-main-menu" class="main-menu__close">Close</label>
+                <label for="toggle-main-menu" class="background">
+                    <span>Background</span>
+                </label>
+
                 <ul class="main-menu">
                     <li class="menu-item">
                         <a href="#">About</a>
@@ -26,8 +38,9 @@
                         <a href="#">Contact</a>
                     </li>
                 </ul>
+
             </nav>
-            <img class="hamburger-icon" src="./images/menu.svg" alt="Hamburger icon">
+            <!-- <img class="hamburger-icon" src="./images/menu.svg" alt="Hamburger icon"> -->
         </div>
     </header>
     <main class="main">
