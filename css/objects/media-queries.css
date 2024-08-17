@@ -3,13 +3,20 @@
         display: none;
     }
     .navbar {
-        display: block;
+        display: flex;
     }
     .main-menu {
         display: flex;
+        width: unset;
+        position: initial;
+        background: white;
+        height: var( --header-height );
     }
     .main-menu__open {
         display: none;
+    }
+    .menu-item a {
+        padding: 0;
     }
     .bio-content {
         display: flex;
